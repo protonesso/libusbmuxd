@@ -24,6 +24,9 @@
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+#ifndef fd_set
+#include <sys/select.h>
+#endif
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdint.h>
